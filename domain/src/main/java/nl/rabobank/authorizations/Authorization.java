@@ -1,7 +1,9 @@
 package nl.rabobank.authorizations;
 
-public enum Authorization
-{
+/**
+ * User Account Permission.
+ */
+public enum Authorization {
     READ,
     WRITE
 }

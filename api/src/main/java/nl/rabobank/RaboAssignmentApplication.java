@@ -1,16 +1,22 @@
 package nl.rabobank;
 
+import nl.rabobank.mongo.configuration.MongoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Import;
-import nl.rabobank.mongo.MongoConfiguration;
 
-@SpringBootApplication
+/**
+ * Account API Application Startup
+ */
 @Import(MongoConfiguration.class)
-public class RaboAssignmentApplication
-{
-    public static void main(final String[] args)
-    {
+@SpringBootApplication
+public class RaboAssignmentApplication {
+
+    /**
+     * Main method of the application.
+     * @param args argument details.
+     */
+    public static void main(final String[] args) {
         SpringApplication.run(RaboAssignmentApplication.class, args);
     }
 }
